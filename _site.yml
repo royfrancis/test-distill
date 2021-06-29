@@ -1,0 +1,44 @@
+name: "Distill"
+title: "Distill"
+description: |
+  Distill demo site
+output_dir: "docs"
+favicon: images/favicon.png
+#base_url: https://rstudio.github.io/distill
+#repository_url: https://github.com/rstudio/distill
+#creative_commons: CC BY
+#preview: static/site-preview.png
+#google_analytics: "UA-20375833-3"
+navbar:
+  title: rmf
+  logo:
+    image: images/logo.png
+    href: https://www.rstudio.com
+  search: true
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+    - icon: fa fa-rss
+      href: index.xml
+collections:
+  posts:
+    categories: true
+    categories_metadata: true
+    #disqus: romf
+rss:
+  full_content: true
+output:
+  distill::distill_article:
+    toc: true
+    toc_float: true
+    toc_depth: 4
+    highlight: tango
+    df_print: paged
+    code_folding: false
+    self_contained: false
+    keep_md: false
+    encoding: 'UTF-8'
+    css: "styles.css"
+    
